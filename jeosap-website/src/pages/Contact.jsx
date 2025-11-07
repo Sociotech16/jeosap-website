@@ -29,7 +29,7 @@ const Contact = () => {
           <div className="bg-white p-6 rounded-xl shadow-md">
             <FaPhoneAlt className="text-blue-800 text-3xl mx-auto mb-3" />
             <p className="text-gray-700">
-              +263 772 189 812 / +263 772 276 529
+            +263 772 189 813 / +263 772 189 812 / +263 772 276 529
             </p>
           </div>
 
