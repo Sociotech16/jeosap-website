@@ -76,7 +76,7 @@ const Home = () => {
           The Jesuit Education Office – Southern Africa Province (JEO-SAP)
           serves as a support and coordination structure for all Jesuit schools
           within the Province, covering Zimbabwe, Zambia, Malawi, Mozambique,
-          South Africa, and Botswana. Our mission is to form men and women who
+          South Africa, Botswana, Lesotho, Namibia and Eswatini. Our mission is to form men and women who
           are “with and for others.”
         </motion.p>
       </section>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
+  "/slide5.jpg",
   "/slide2.jpg",
   "/slide1.jpg",
   "/slide3.jpg",

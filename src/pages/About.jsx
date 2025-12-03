@@ -66,6 +66,29 @@ const About = () => {
             <li>Foster innovation, sustainability, and collaboration across schools.</li>
           </ul>
         </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h3 className="text-2xl font-bold text-blue-900 mb-4">Jesuit Education and the Sustainable Development Goals</h3>
+          <p className="text-gray-700">
+
+Jesuit education aligns most closely with the following Sustainable Development Goals, reflecting our mission to form leaders committed to service, justice, and faith:<br></br>
+<ul className="text-gray-700 space-y-3 list-disc list-inside">
+<li>SDG 4 – Quality Education</li> 
+
+<li>SDG 5 – Gender Equality</li>
+
+<li>SDG 10 – Reduced Inequalities</li>
+
+<li>SDG 13 – Climate Action</li>
+
+<li>SDG 16 – Peace and Justice</li>
+</ul>
+Through rigorous academics, ethical formation, and social engagement, Jesuit education empowers students to make a meaningful impact in the world.
+          </p>
+        </motion.div>
       </section>
     </div>
   );

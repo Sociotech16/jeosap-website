@@ -1,22 +1,61 @@
 import { motion } from "framer-motion";
-import { FaHandsHelping, FaSchool, FaGlobeAfrica } from "react-icons/fa";
+import {
+  FaHandsHelping,
+  FaSchool,
+  FaGlobeAfrica,
+  FaDonate,
+  FaBookReader,
+  FaBroadcastTower,
+  FaMoneyCheckAlt,
+} from "react-icons/fa";
 
 const partners = [
   {
-    name: "Jesuit Schools Network",
-    desc: "Collaborating to uphold Ignatian values across Southern Africa.",
+    name: "Education Ministries in Southern Africa",
+    desc: "Work closely with Jesuit schools to ensure alignment with national education policies, support curriculum standards, and promote quality learning outcomes across the region.",
     icon: <FaSchool className="text-blue-600 text-4xl mb-3" />,
   },
   {
-    name: "Catholic Education Commission",
-    desc: "Working together to strengthen Catholic education and leadership.",
+    name: "Jesuit Schools Network",
+    desc: "Partnering on key initiatives that advance Ignatian values and enhance educational quality.",
+    icon: <FaSchool className="text-blue-600 text-4xl mb-3" />,
+  },
+  {
+    name: "Jesuit Missions UK",
+    desc: "Supporting faith-driven education initiatives across the Province through funding and mission collaboration.",
+    icon: <FaDonate className="text-blue-600 text-4xl mb-3" />,
+  },
+  {
+    name: "Porticus Foundation",
+    desc: "Promoting transformative and values-based education through long-term strategic support.",
     icon: <FaHandsHelping className="text-blue-600 text-4xl mb-3" />,
   },
   {
-    name: "Global Jesuit Education Network",
-    desc: "Connecting Jesuit schools globally for shared learning and innovation.",
+    name: "Swiss Academy for Development (SA4D)",
+    desc: "Partnering on educational development, research, and community-based learning projects.",
     icon: <FaGlobeAfrica className="text-blue-600 text-4xl mb-3" />,
   },
+  {
+    name: "Beit Trust",
+    desc: "Supporting infrastructure development and educational improvement across Southern Africa.",
+    icon: <FaSchool className="text-blue-600 text-4xl mb-3" />,
+  },
+  {
+    name: "ZCBC Education Secretariat",
+    desc: "Collaborating within the national Catholic education framework to strengthen policy and mission alignment.",
+    icon: <FaBookReader className="text-blue-600 text-4xl mb-3" />,
+  },
+  {
+    name: "Jesuit Communications (JesCom)",
+    desc: "Providing media, storytelling, and advocacy support to amplify the mission of Jesuit Education.",
+    icon: <FaBroadcastTower className="text-blue-600 text-4xl mb-3" />,
+  },
+  {
+    name: "Jesuit Development Office",
+    desc: "Offering financial administration and support.",
+    icon: <FaMoneyCheckAlt className="text-blue-600 text-4xl mb-3" />,
+  },
+  
 ];
 
 export default function Partners() {
@@ -28,13 +67,14 @@ export default function Partners() {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h1 className="text-4xl font-bold text-blue-800 mb-4">Our Partners</h1>
-        <p className="max-w-2xl mx-auto text-gray-600">
-          We work hand-in-hand with educational and faith-based institutions to advance the mission
-          of Jesuit education and foster transformation in society.
+        <h1 className="text-4xl font-bold text-blue-800 mb-4">Partnerships & Collaborations</h1>
+        <p className="max-w-3xl mx-auto text-gray-600">
+          We collaborate with partners who share our vision of faith-driven, transformative education. 
+          Their support strengthens our mission, expands our impact, and promotes sustainable development across our school network.
         </p>
       </motion.div>
 
+      {/* Partner Cards */}
       <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {partners.map((partner, index) => (
           <motion.div
@@ -49,6 +89,7 @@ export default function Partners() {
         ))}
       </div>
 
+      {/* CTA Section */}
       <motion.div
         className="mt-20 text-center"
         initial={{ opacity: 0 }}

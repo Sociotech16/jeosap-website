@@ -9,12 +9,12 @@ export default function Navbar() {
 
   const navLinks = [
     { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
+    { path: "/about", label: "About Us" },
     { path: "/network", label: "Network" },
     { path: "/programs", label: "Programs" },
     { path: "/partners", label: "Partners" },
     { path: "/governance", label: "Governance" },
-    { path: "/contact", label: "Contact" },
+    { path: "/contact", label: "Contact Us" },
   ];
 
   return (
